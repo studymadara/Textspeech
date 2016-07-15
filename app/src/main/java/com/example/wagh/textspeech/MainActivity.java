@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity implements TextToSpeech.OnIn
             @Override
             public void onClick(View view) {
                 speakout();
-                tts.shutdown();
+
             }
         });
 
@@ -37,6 +37,7 @@ public class MainActivity extends AppCompatActivity implements TextToSpeech.OnIn
 
                 Intent i=new Intent(MainActivity.this,Listview.class);
                 startActivity(i);
+                
                 return true;
             }
         });
