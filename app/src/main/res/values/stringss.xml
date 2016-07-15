@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="heart">
+        <item>Love</item>
+        <item>Places</item>
+        <item>Lie</item>
+        <item>Face</item>
+        <item>Police</item>
+        <item>India</item>
+        <item>Burn</item>
+        </string-array>
+</resources>
