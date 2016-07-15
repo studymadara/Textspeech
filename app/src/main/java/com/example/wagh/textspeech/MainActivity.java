@@ -1,5 +1,6 @@
 package com.example.wagh.textspeech;
 
+import android.content.Intent;
 import android.speech.tts.TextToSpeech;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -26,10 +27,19 @@ public class MainActivity extends AppCompatActivity implements TextToSpeech.OnIn
             @Override
             public void onClick(View view) {
                 speakout();
+                tts.shutdown();
             }
         });
 
+        bb.setOnLongClickListener(new View.OnLongClickListener() {
+            @Override
+            public boolean onLongClick(View view) {
 
+                Intent i=new Intent(MainActivity.this,Listview.class);
+                startActivity(i);
+                return true;
+            }
+        });
     }
 
     @Override

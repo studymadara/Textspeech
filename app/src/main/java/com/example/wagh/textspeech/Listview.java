@@ -40,7 +40,7 @@ public class Listview extends AppCompatActivity implements TextToSpeech.OnInitLi
             //NO CUSTOM ADAPTERS FOR NOW
 
             //JUST CUSTOM LAYOUT AND DATA THROWN IN THE {PARENT) LISTVIEW!
-            
+
             ArrayAdapter arrayAdapter = new ArrayAdapter<String>(this, R.layout.list_item, R.id.textviewlist, heart);
 
             ll.setAdapter(arrayAdapter);
